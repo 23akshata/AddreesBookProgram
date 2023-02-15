@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace AddressBookProgram
 {
-    internal class Contact
+    public class Contact
     {
+        //This is model Class
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public long Zip { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
+
     }
 }
