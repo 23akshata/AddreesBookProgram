@@ -44,7 +44,8 @@ namespace AddressBookProgram
             {
                 if(contact.FirstName.Equals(name))
                 {
-                    Console.WriteLine("1.Address \n 2.FirstName \n 3.LastName \n 4.Email \n 5.City \n 6:PhoneNumber \n 7:State");
+                    Console.WriteLine("1.Address \n 2.FirstName \n 3.LastName \n 4.Email \n 5.City \n 6:PhoneNumber \n 7:State \n Zip");
+                    Console.WriteLine("1.Address");
                     int option = Convert.ToInt32(Console.ReadLine());
                     switch(option)
                     {
@@ -52,6 +53,7 @@ namespace AddressBookProgram
                             Console.WriteLine("Enter the new address");
                             contact.Address = Console.ReadLine();
                             break;
+
                         case 2:
                             Console.WriteLine("Enter the new First Name");
                             contact.FirstName = Console.ReadLine();
@@ -76,7 +78,10 @@ namespace AddressBookProgram
                             Console.WriteLine("Enter the new State");
                             contact.State = Console.ReadLine();
                             break;
-                       
+                        case 8:
+                            Console.WriteLine("Enter the new Zip");
+                            contact.Zip = Convert.ToInt64 (Console.ReadLine());
+                            break;
                     }
                 }
             }
